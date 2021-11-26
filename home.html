@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan's Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9fa01ec5cb.js" crossorigin="anonymous"></script>
+    <style>
+        /* css reset */
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/abs-1850926_1920.jpg');
+            font-family: 'Baloo 2', cursive;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 4px;
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 0px;
+            font-size: 23px;
+        }
+
+        .mid {
+
+            display: block;
+            margin: 4px auto;
+            width: 46%;
+        }
+
+        .right {
+
+            position: absolute;
+            right: 23px;
+            top: 6px;
+        }
+
+        .navbar li {
+            text-decoration: none;
+            display: inline-block;
+            padding: 0px 33px;
+            font-size: 21px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .left img {
+            width: 133px;
+            filter: invert(100%);
+            background-size: cover;
+        }
+
+        .btn {
+            margin: 8px;
+            padding: 3px 11px;
+            font-family: 'Baloo 2', cursive;
+            color: blanchedalmond;
+            background-color: black;
+            border: 2px solid grey;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            color: rgb(88, 83, 83);
+            cursor: pointer;
+        }
+
+        .container1 {
+            border-radius: 5px;
+            margin: 70px 9px;
+            padding: 15px 26px;
+            width: 30%;
+        }
+
+        .form-group input {
+            font-family: 'Baloo 2', cursive;
+            text-align: center;
+            display: block;
+            width: 300px;
+            padding: 3px;
+            margin: 4px auto;
+            border: 2px solid black;
+            border-radius: 6px;
+            font-size: 18px;
+        }
+
+        .container1 h2 {
+            text-align: center;
+        }
+
+        .container1 button {
+            text-align: center;
+            display: block;
+            width: 313px;
+            margin: 15px auto;
+        }
+
+        .alertmsgcls {
+            text-align: center;
+            color: #fff;
+            background: #49a51a;
+            padding: 4px 10px;
+            font-size: 12px;
+            border-radius: 50px;
+            margin: 0 14% 20px;
+            display: none;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: rgb(14, 13, 13);
+        }
+
+        .footer-content {
+            padding: 3% 17%;
+            color: #fff;
+        }
+
+        .footer-icon {
+            margin: 20px 10px;
+            color: #fff;
+        }
+    .footer a{
+        color: #fff;
+    }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/crossfit-gdd1325dd6_1280.png" alt="">
+            <div>Roshan's Gym</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/training.html">Training</a></li>
+                <li><a href="/Facilites.html">Facilites</a></li>
+                <li><a href="/contact_us.html">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email now</button>
+        </div>
+    </header>
+    <div class="container1">
+        <h2>Be the part of us!</h2>
+        <form id="registrationform">
+            <div class="alertmsgcls">Your Message has been sent.</div>
+            <div class="form-group">
+                <input type="text" name="name" id="name" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="age" id="age" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="locality" id="locality" placeholder="Enter your locality">
+            </div>
+            <div class="form-group">
+                <input type="number" name="phone" id="phone" placeholder="Enter your Phone number">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Enter your Email Id">
+            </div>
+            <button type="submit" class="btn">Submit</button>
+
+        </form>
+
+
+
+
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter footer-icon"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f footer-icon"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram footer-icon"></i></a>
+            <a href="https://gmail.com" target="_blank"><i class="fas fa-envelope footer-icon"></i></a>
+            <p>© Copyright 2021 | Roshan's Gym</p>
+            <p>Made with ❤️ by Roshan</p>
+        </div>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
