@@ -70,13 +70,14 @@
         }
 
         .btn {
-            margin: 8px;
+            margin: 6px 3px;
             padding: 3px 11px;
             font-family: 'Baloo 2', cursive;
             color: blanchedalmond;
             background-color: black;
             border: 2px solid grey;
             border-radius: 6px;
+            display: inline-block;
         }
 
         .btn:hover {
@@ -153,15 +154,15 @@
         </div>
         <div class="mid">
             <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="training.html">Training</a></li>
-                <li><a href="Facilites.html">Facilites</a></li>
-                <li><a href="contact_us.html">Contact us</a></li>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/training.html">Training</a></li>
+                <li><a href="/Facilites.html">Facilites</a></li>
+                <li><a href="/contact_us.html">Contact us</a></li>
             </ul>
         </div>
         <div class="right">
-            <button class="btn">Call us now</button>
-            <button class="btn">Email now</button>
+            <a class="btn" href="tel:9582545476">Call us now</a>
+            <a class="btn" href="mailto:prajapatiroshan987@gmail.com">Email now</a>
         </div>
     </header>
     <div class="container1">
@@ -169,22 +170,22 @@
         <form id="registrationform">
             <div class="alertmsgcls">Your Message has been sent.</div>
             <div class="form-group">
-                <input type="text" name="name" id="name" placeholder="Enter your Name">
+                <input type="text" name="name" id="name" placeholder="Enter your Name" required>
             </div>
             <div class="form-group">
-                <input type="number" name="age" id="age" placeholder="Enter your age">
+                <input type="number" name="age" id="age" placeholder="Enter your age" required>
             </div>
             <div class="form-group">
-                <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+                <input type="text" name="gender" id="gender" placeholder="Enter your gender" required>
             </div>
             <div class="form-group">
-                <input type="text" name="locality" id="locality" placeholder="Enter your locality">
+                <input type="text" name="locality" id="locality" placeholder="Enter your locality" required>
             </div>
             <div class="form-group">
-                <input type="number" name="phone" id="phone" placeholder="Enter your Phone number">
+                <input type="number" name="phone" id="phone" placeholder="Enter your Phone number" required>
             </div>
             <div class="form-group">
-                <input type="email" name="email" id="email" placeholder="Enter your Email Id">
+                <input type="email" name="email" id="email" placeholder="Enter your Email Id" required>
             </div>
             <button type="submit" class="btn">Submit</button>
 
